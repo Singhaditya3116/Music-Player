@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="main-container">
+        <div id="music-image">
+            <img src="./img/jacinto-1.jpg" alt="music-image">
+        </div>
+        <div class="music-details">
+            <h1 id="music-name">Despasito</h1>
+            <h3 id="singer-name"> Aditya SIngh</h3>
+            <audio src="./music/jacinto-1.mp3"></audio>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-container" id="progress-container">
+            <div class="duration-wrapper">
+                <span id="current-time">0:00s</span>
+                <span id="duration">2:06s</span>
+            </div>
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="button-container">
+            <i class='bx bx-skip-previous' id="prev" title="Previous"></i>
+            <i class='bx bx-play' id="play" title="Play"></i>
+            <i class='bx bx-skip-next' id="next" title="Next"></i>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
